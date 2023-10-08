@@ -7,3 +7,7 @@
 .document h2 {
   @apply inline-block text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200 mt-8 mb-4;
 }
+
+.document p {
+  @apply leading-6;
+}

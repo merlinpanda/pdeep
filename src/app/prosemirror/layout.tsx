@@ -28,7 +28,9 @@ export default function MdxLayout({ children }: { children: React.ReactNode }) {
           title="Hi there!"
         />
       </div>
-      <div className="py-4 document">{children}</div>
+      <div className="py-4 document">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">{children}</div>
+      </div>
     </div>
   );
 }

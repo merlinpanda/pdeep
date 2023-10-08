@@ -233,10 +233,10 @@ export function Header({
       </div>
       <div
         className={clsx(
-          "sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06]",
+          "header dark:border-slate-50/[0.06]",
           isOpaque
-            ? "bg-white supports-backdrop-blur:bg-white/60 dark:bg-slate-900/60"
-            : "bg-white/60 supports-backdrop-blur:bg-white/60 dark:bg-transparent"
+            ? "bg-white dark:bg-slate-900/60"
+            : "bg-white/60 dark:bg-transparent"
         )}
       >
         <div className="max-w-8xl mx-auto">
