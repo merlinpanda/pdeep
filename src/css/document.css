@@ -1,0 +1,9 @@
+@tailwind utilities;
+
+.document h1 {
+  @apply inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200 mt-2 mb-1;
+}
+
+.document h2 {
+  @apply inline-block text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200 mt-8 mb-4;
+}

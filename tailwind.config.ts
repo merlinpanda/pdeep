@@ -3,19 +3,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 import svgToDataUri from "mini-svg-data-uri";
 
 const config: Config = {
-  experimental: {
-    optimizeUniversalDefaults: true,
-  },
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  blocklist: [
-    "[html:has(&)]:bg-blue-500",
-    "list-image-[url(checkmark.png)]",
-    "list-image-[url(carrot.png)]",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   darkMode: "class",
   theme: {
     screens: {
@@ -65,6 +53,10 @@ const config: Config = {
             },
             "h1, h2, h3": {
               letterSpacing: "-0.025em",
+            },
+            h1: {
+              marginTop: "2.4em",
+              marginBottom: `${16 / 24}em`,
             },
             h2: {
               marginBottom: `${16 / 24}em`,
@@ -279,10 +271,6 @@ const config: Config = {
       }),
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/forms")({ strategy: "class" }),
-  ],
+  plugins: [],
 };
 export default config;

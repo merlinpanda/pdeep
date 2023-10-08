@@ -235,8 +235,8 @@ export function Header({
         className={clsx(
           "sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06]",
           isOpaque
-            ? "bg-white supports-backdrop-blur:bg-white/75 dark:bg-slate-900/75"
-            : "bg-white/75 supports-backdrop-blur:bg-white/60 dark:bg-transparent"
+            ? "bg-white supports-backdrop-blur:bg-white/60 dark:bg-slate-900/60"
+            : "bg-white/60 supports-backdrop-blur:bg-white/60 dark:bg-transparent"
         )}
       >
         <div className="max-w-8xl mx-auto">
@@ -246,19 +246,20 @@ export function Header({
               hasNav ? "mx-4 lg:mx-0" : "px-4"
             )}
           >
-            <div className="relative flex items-center">
-              <Link
-                href="/"
-                className="mr-3 flex-none w-[2.0625rem] overflow-hidden md:w-auto"
-                onContextMenu={(e) => {
-                  e.preventDefault();
-                  Router.push("/brand");
-                }}
-              >
-                <span className="sr-only">Home page</span>
-                <Logo className="w-8 h-8" />
-              </Link>
-              <Featured />
+            <div className="relative flex justify-between items-center">
+              <div className="flex flex-row items-center">
+                <Link
+                  href="/"
+                  className="mr-3 flex-none w-[2.0625rem] overflow-hidden md:w-auto"
+                  onContextMenu={(e) => {
+                    e.preventDefault();
+                    Router.push("/brand");
+                  }}
+                >
+                  <span className="sr-only">Home page</span>
+                  <Logo className="w-8 h-8" />
+                </Link>
+              </div>
               <div className="relative hidden lg:flex items-center ml-auto">
                 <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
                   <ul className="flex space-x-8">

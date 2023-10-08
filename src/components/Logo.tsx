@@ -26,7 +26,9 @@ export function Logo({ className, ...props }: IClassName) {
         />
         <path d="M109.4 95c10.8 0 2 14.9-.6 20.9-1.8-8.4-10.2-20.9.6-20.9zM93.1 80.1c-5.6 0-10.2 4.5-10.2 10.2 0 5.6 4.5 10.2 10.2 10.2 5.6 0 10.2-4.5 10.2-10.2 0-5.6-4.5-10.2-10.2-10.2zm30.5-.1c-4.8 0-8.8 4.5-8.8 10.2 0 5.6 3.9 10.2 8.8 10.2 4.8 0 8.8-4.5 8.8-10.2 0-5.6-3.9-10.2-8.8-10.2z" />
       </svg>
-      <span className="text-base font-bold">ProseMirror·中文文档</span>
+      <span className="hidden text-base font-bold lg:inline">
+        ProseMirror·中文文档
+      </span>
     </div>
   );
 }
