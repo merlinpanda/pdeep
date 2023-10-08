@@ -233,7 +233,7 @@ export function Header({
       </div>
       <div
         className={clsx(
-          "header dark:border-slate-50/[0.06]",
+          "header-navbar dark:border-slate-50/[0.06]",
           isOpaque
             ? "bg-white dark:bg-slate-900/60"
             : "bg-white/60 dark:bg-transparent"
@@ -309,7 +309,7 @@ export function Header({
               {title && (
                 <ol className="ml-4 flex text-sm leading-6 whitespace-nowrap min-w-0">
                   {section && (
-                    <li className="flex items-center">
+                    <li className="flex items-center capitalize">
                       {section}
                       <svg
                         width="3"
@@ -327,7 +327,7 @@ export function Header({
                       </svg>
                     </li>
                   )}
-                  <li className="font-semibold text-slate-900 truncate dark:text-slate-200">
+                  <li className="font-semibold text-slate-900 truncate dark:text-slate-200 capitalize">
                     {title}
                   </li>
                 </ol>

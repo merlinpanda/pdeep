@@ -1,13 +1,21 @@
 @tailwind utilities;
 
 .document h1 {
-  @apply inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200 mt-2 mb-1;
+  @apply inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200 mt-8 mb-3;
 }
 
 .document h2 {
-  @apply inline-block text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200 mt-8 mb-4;
+  @apply inline-block text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200 mt-8 mb-3;
 }
 
 .document p {
-  @apply leading-6;
+  @apply leading-7 py-2;
+}
+
+.document ul li {
+  @apply list-disc list-inside leading-7 py-1 pl-4;
+}
+
+.document ol li {
+  @apply list-decimal list-inside leading-7 py-1;
 }
